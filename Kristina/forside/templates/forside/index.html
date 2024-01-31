@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Psykoterapi Frederiksberg</title> <!-- title på siden -->
+
+<!-- De forskellige bibloteker - Bootstrap og front til teksten PlayFair Display -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<link href="{% static 'forside/styles.css' %}" rel="stylesheet">
+
+<body>
+<!-- Hero - overskift sektionen  -->
+    <div class="container"> 
+        <section class="hero-banner">
+          <h1 class="hero-title">Psykoterapi Frederiksberg</h1>
+          <p class="hero-subtitle">"For at ændre følelser må du arbejde med følelser"</p>
+          <a href="#" class="btn btn-custom">Kontak mig</a>
+        </section>
+
+        <!-- velkommen til en rejse i emotionsfokuseret psykoterapi sektionen -->
+        <section class="row content">
+            <div class="col-lg-6 text-section">
+              <h2 class="content-title">Emotionsfokuseret psykoterapi</h2>
+        <p class="content-text">Velkommen til en rejse i emotionsfokuseret psykoterapi, hvor vi bruger dine følelser som vejledning mod indre balance og ægte selvudtryk. Vi udforsker og balancerer dine følelser for at styrke din evne til at træffe sunde valg og navigere i livets udfordringer. Uanset din situation, er du i trygge hænder, hvor vi sammen søger dybere forståelse og personlig udvikling.</p>
+    </div>
+    <div class="col-lg-6 image-section">
+        <img src="{% static 'forside/images/Foto.png' %}" class="responsive-image" alt="Beskrivelse"> <!-- billede af Kristina -->
+
+    </div>
+  </section>
+
+  <!-- De 5 grunde -->
+    <section class="list-container text-center">
+      <h3 class="list-title">Her er de fem grunde til du skal vælge psykoterapi</h3>
+      <ul class="list-unstyled"> 
+      <li class="list-item">Få indsigt i dig selv, dine følelser og tanker, og hvordan de påvirker din adfærd og relationer.</li>
+      <li class="list-item">Lære nye måder at håndtere stress, sorg, konflikter, kriser og traumer på.</li>
+      <li class="list-item">Ændre negative eller uhensigtsmæssige handlemønstre, der forringer din livskvalitet.</li>
+      <li class="list-item">Styrke din selvværd, selvtillid og selvaccept.</li>
+      <li class="list-item">Udvikle dine kompetencer, potentialer og ressourcer.</li>
+    </ul>
+  </section>
+</div>
+</body>
+</html>
